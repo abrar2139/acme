@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*-------------Header start--------------*/
+
+header{
+    position: sticky;
+    z-index: 9999;
+    top: 0px;
+}
+.topbar {
+    font-size: 25px;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 10px;
+    align-items: center;
+}
+.topbar p {
+    margin: 10px;
+}
+.topbar button {
+    background-color: #eb5757;
+    border: none;
+    padding: 10px 26px;
+    color: white;
+    border-radius: 20px;
+    font-size: 19px;
+    font-family:  sans-serif ;
+    letter-spacing:1px ;
+    cursor: pointer;
+}
+#navbar {
+    background-color: #eb5757;
+    position: sticky;
+    z-index: 99999;
+}
+#navbar .innernav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    align-items: center;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+}
+#navbar .logo img{
+    height: 35px;
+    cursor: pointer;
+}
+#navbar .links {
+    display: flex;
+    align-items: center;
+}
+#navbar .links .seperate {
+    list-style: none;
+    margin: 0 28px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 10%; 
+}
+.manu-icon{
+    display: none;
+    color: white;
+}
+.manu-icon i{
+   cursor: pointer;
+}
+#navbar .links li:hover{
+    background-color: #222;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+.links li:last-child {
+    background-color:  #222;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+#navbar .innernav #manuList :nth-child(6):hover{
+    background-color: #eb5757;
+}
+    /*-------------Header Close--------------*/
+
+
+    /*-------------Herosection Start--------------*/
+.hero-section{
+    background: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('assets/images/bg3.jpg') no-repeat center /cover;
+    height: 90vh;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+}
+.hero-section .content1 {
+    margin-left: 95px;
+    color: white;
+}
+.hero-section .content1 h1 {
+    font-size: 80px;
+    letter-spacing: 1px;
+    width: 500px;
+}
+.hero-section .content1 p {
+    font-size: 25px;
+    width: 450px;
+    margin: 20px 0;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.hero-section .content1 button {
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+.hero-section .content1 button:hover{
+    background-color: white;
+    color: #222;
+}
+/*-------------Herosection Close--------------*/
+
+
+
+.journal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin:60px auto;
+}
+.journal .journal-right-area{
+    width: 50%;
+    display: flex; 
+    font-size: 23px;
+    line-height: 35px;   
+}
+.journal .journal-left-area{
+    width: 50%;
+}
+.journal .journal-left-area p{
+    font-size: 30px;  
+}
+.journal .journal-left-area h1{
+    font-size: 55px;
+}
+
+
+
+.journal-cards{
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;  
+    margin-bottom: 150px;    
+}
+.journal-card-parent {
+    width: 360px;
+    height: 600px;
+}
+.journal-card-uppersection{
+   height: 70%;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    padding: 45px;
+}
+ .journal-card-parent p{
+    height: 20%;
+    margin-top: 20px;
+    font-size: 23px;
+    line-height: 30px;        
+}
+.journal-card-uppersection:nth-child(1){
+    font-size: 25px;
+}
+.journal-card-uppersection #special{
+    margin-top: 90px;  
+}
+.journal-cards .special1{
+    margin:0px 10px ;
+}
+.journal-card-uppersection h1:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+     margin-top: 60px;
+     font-size: 50px;  
+} 
+
+
+
+.statement-section{
+background: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url('assets/images/bg4.jpg') no-repeat center /cover;
+height: 90vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-family: sans-serif;
+margin-top: 230px;
+margin-bottom: 100px;
+}
+.statement-section .content1{
+color: white; 
+display: flex;
+flex-direction: column;
+text-align: right;
+align-items: flex-end;
+margin-right: 100px;
+}
+.statement-section .content1 h1{
+font-size: 55px;
+width:650px;
+}
+.statement-section .content1 p{
+font-size:22px ;
+letter-spacing: 1px;
+width:520px;
+margin: 20px 0;
+font-family: sans-serif;
+}
+.statement-section .content1 button{
+    background: white;
+    border: none;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;}
+    .statement-section .content1 button:hover{
+        background-color: #eb5757;
+        color:white;
+        border: 2px solid #eb5757;
+    }
+
+
+
+    .boxes1{
+     width: 90%;
+     margin: auto; 
+    }
+    .boxes1 .heading{
+        letter-spacing: 1px;
+    }
+    .boxes1 .heading h1{
+        
+        font-size: 60px;
+    }
+    .boxes1 .heading p{
+        
+        font-size: 23px;
+   }
+    .boxes2{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .boxes2 .boxparent2{
+        width: 360px;
+        margin-bottom: 60px;
+    }
+    .boxes2 .boxparent2 img{
+       border-radius: 5px;
+        width: 100%;
+        height:490px;
+    }
+    .box2{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .box2 del{
+        color: #eb5757;
+    }
+    .box2 button{
+        margin-top: 15px;
+        padding: 8px 30px;
+        background-color: #eb5757 ;
+        color: white;
+        border:none;
+        font-size: x-large;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .box2 button:hover{
+        background-color: #222;
+    }
+    .box2 :nth-child(2){
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .box2 .p1{
+        font-size: 35px;
+    }
+    .boxes1 .btn {
+        display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .boxes1 .btn button{
+        padding: 8px 35px;
+        background-color: #222;
+        color: white;
+        font-size: 15px;
+        font-size: x-large;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .boxes1 .btn button:hover{
+        background-color: #eb5757;
+        border: 2px solid #eb5757;
+    }
+
+
+
+    .picdiv{
+        display: flex;
+        width: 90%;
+        margin:190px auto;
+        align-items: center;  
+    }
+    .picdiv img{
+        height: 550px;
+        width: 440px;
+        z-index: 999;   
+        position: relative;
+        border-radius: 5px;
+    }
+    .picdiv .black{
+        background-color: #222;
+        color: white;
+        height: 700px;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -150px;
+         border-radius: 5px; 
+    }
+    .picdiv .black .contentparagraph h1{
+        font-weight: 900;  
+    }
+    .picdiv .black .contentparagraph{
+        width: 60%;
+        line-height: 30px;
+        font-size: 25px;
+        margin-top: 70px;
+    }
+    .picdiv .black .contentparagraph p{
+        margin: 20px 0;
+        width: 70%;
+    }
+
+
+
+    footer{
+        color: white;
+        background-color: #222;
+        margin-top: 100px;
+        height: 220px;
+    }
+    footer i{
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+    footer .bigfoot p{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    }
+    footer p a{
+    color: #eb5757;
+    margin-left: 5px;
+    letter-spacing: 3px;
+    }
+    footer p a:hover{
+       text-decoration: none; 
+    }
+    .smallfoot img{
+        cursor: pointer;
+    }
+    .smallfoot{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+    .bigfoot{
+        padding-top: 70px;
+    }
+    .bigfoot .smallfoot .bottom-icons i:hover{
+      color: silver;
+    }
+    
